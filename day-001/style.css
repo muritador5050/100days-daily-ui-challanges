@@ -28,10 +28,10 @@ a:hover {
 }
 
 .wrapper {
-  /* width: 100%; */
+  width: 100%;
   border: 5px solid red;
-  align-content: center;
-  justify-items: center;
+  /* align-content: center;
+  justify-items: center; */
   min-height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -39,7 +39,7 @@ a:hover {
 .login_box {
   position: relative;
   /* width: 450px; */
-  width: 80%;
+  width: 100%;
   /* min-height: 600px; */
   backdrop-filter: blur(25px);
   border: 2px solid var(--primary-color);
@@ -88,7 +88,7 @@ a:hover {
   height: 30px;
   border-top-left-radius: 50%;
   background: transparent;
-  box-shadow: -15px 0 0 0 var(--primary-color); /* Removed space before --primary-color */
+  box-shadow: -15px 0 0 0 var(--primary-color);
 }
 
 .input_box {
