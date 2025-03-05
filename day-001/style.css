@@ -17,6 +17,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  font-size: 1.2rem;
 }
 
 a {
@@ -30,6 +31,9 @@ a:hover {
 .wrapper {
   width: 100%;
   border: 5px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /* align-content: center;
   justify-items: center; */
   min-height: 100vh;
@@ -39,7 +43,7 @@ a:hover {
 .login_box {
   position: relative;
   /* width: 450px; */
-  width: 100%;
+  width: 80%;
   /* min-height: 600px; */
   backdrop-filter: blur(25px);
   border: 2px solid var(--primary-color);
