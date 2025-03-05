@@ -33,19 +33,14 @@ a:hover {
 
 .wrapper {
   width: 100%;
-  border: 5px solid red;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* align-content: center;
-  justify-items: center; */
+  align-content: center;
+  justify-items: center;
   min-height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
 .login_box {
   position: relative;
-  /* width: 450px; */
   width: 80%;
   font-size: 1.5rem;
   backdrop-filter: blur(25px);
@@ -102,7 +97,7 @@ a:hover {
   position: relative;
   display: flex;
   flex-direction: column;
-  margin: 35px 0;
+  margin: 25px 0;
 }
 
 .input-field {
@@ -242,13 +237,12 @@ a:hover {
   cursor: pointer;
 }
 
-@media (min-width: 600px) {
+/* @media screen and (min-width: 600px) {
   .wrapper {
     padding: 20px;
   }
   .login_box {
-    width: 30%;
-    /* padding: 7.5em 1.5em 4em 1.5em; */
+    padding: 7.5em 1.5em 4em 1.5em;
     font-size: initial;
   }
-}
+} */
