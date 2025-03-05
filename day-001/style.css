@@ -45,6 +45,7 @@ a:hover {
   /* width: 450px; */
   width: 80%;
   /* min-height: 600px; */
+  font-size: 1.5rem;
   backdrop-filter: blur(25px);
   border: 2px solid var(--primary-color);
   border-radius: 15px;
