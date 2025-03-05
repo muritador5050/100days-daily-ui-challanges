@@ -34,8 +34,8 @@ a:hover {
   align-items: center;
   min-height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
+  /* padding: 0 0.5em; */
 }
-
 .login_box {
   position: relative;
   width: 450px;
@@ -231,11 +231,16 @@ a:hover {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 564px) {
+@media (max-width: 450px) {
   .wrapper {
     padding: 20px;
   }
   .login_box {
     padding: 7.5em 1.5em 4em 1.5em;
+  }
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
