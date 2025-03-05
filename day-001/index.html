@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap"
     />
     <link rel="stylesheet" href="./style.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="wrapper">
@@ -21,15 +22,17 @@
         </div>
 
         <div class="input_box">
-          <input type="text" id="user" class="input-field" required />
+          <input type="text" id="user" class="input-field" />
           <label for="user" class="label">Username</label>
           <i class="bx bx-user icon"></i>
+          <small class="error-msg name-error" id="user-error"></small>
         </div>
 
         <div class="input_box">
-          <input type="password" id="pass" class="input-field" required />
+          <input type="password" id="pass" class="input-field" />
           <label for="pass" class="label">Password</label>
           <i class="bx bx-lock-alt icon"></i>
+          <small class="error-msg" id="pass-error"></small>
         </div>
 
         <div class="remember-forgot">
@@ -44,14 +47,22 @@
         </div>
 
         <div class="input_box">
-          <input type="submit" class="input-submit" value="Login" />
+          <input type="submit" id="btn" class="input-submit" value="Login" />
         </div>
 
         <div class="register">
           <span>Don't have an account? <a href="#">Register</a></span>
         </div>
       </div>
+      <div id="successModal" class="modal">
+        <div class="modal-content">
+          <span class="close-btn" onclick="closeModal()">&times;</span>
+          <p>Form submitted successfully!</p>
+        </div>
+      </div>
+      <div id="loadingSpinner" class="spinner-cont">
+        <div class="spinner"></div>
+      </div>
     </div>
-    <!-- partial -->
   </body>
 </html>

@@ -164,6 +164,73 @@ a:hover {
   font-weight: 500;
 }
 
+.error-msg {
+  color: red;
+  margin-left: 1em;
+}
+.error-border {
+  border: 2px solid red;
+}
+.name-error {
+  margin-top: -5px !important;
+}
+.spinner-cont {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.spinner {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-right: 5px solid red;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  margin: 10px auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  width: 300px;
+  margin: 20% auto;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.close-btn {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 564px) {
   .wrapper {
     padding: 20px;
