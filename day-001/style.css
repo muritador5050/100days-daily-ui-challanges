@@ -236,10 +236,10 @@ a:hover {
 
 @media (max-width: 600px) {
   .wrapper {
-    padding: 20px;
+    padding: 20px 5px;
   }
   .login_box {
-    padding: 7.5em 1.5em 4em 1.5em;
+    padding: 7.5em 0.7em 4em 0.7em;
   }
   .modal-content {
     margin: 70% auto;
