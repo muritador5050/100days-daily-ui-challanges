@@ -1,0 +1,46 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #c6c3c3;
+  --second-color: #ffffff;
+  --black-color: #000000;
+}
+
+body {
+  background-image: url('https://codingstella.com/wp-content/uploads/2024/01/download-6-scaled.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.challenge-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.challenge-item {
+  background: var(--primary-color);
+  border: 1px solid #ddd;
+  padding: 0.5em 1em;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.challenge-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.daily {
+  background: var(--primary-color);
+  text-align: center;
+  padding: 0.5em 0;
+}
