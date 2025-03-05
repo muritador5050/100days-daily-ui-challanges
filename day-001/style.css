@@ -18,6 +18,9 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-size: 1.2rem;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
 }
 
 a {
@@ -44,7 +47,6 @@ a:hover {
   position: relative;
   /* width: 450px; */
   width: 80%;
-  /* min-height: 600px; */
   font-size: 1.5rem;
   backdrop-filter: blur(25px);
   border: 2px solid var(--primary-color);
@@ -240,11 +242,13 @@ a:hover {
   cursor: pointer;
 }
 
-@media (max-width: 450px) {
-  /* .wrapper {
+@media (min-width: 600px) {
+  .wrapper {
     padding: 20px;
   }
   .login_box {
-    padding: 7.5em 1.5em 4em 1.5em;
-  } */
+    width: 30%;
+    /* padding: 7.5em 1.5em 4em 1.5em; */
+    font-size: initial;
+  }
 }
