@@ -71,10 +71,6 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
 
 .input-group {
   margin-bottom: 15px;
@@ -98,6 +94,12 @@ input {
 .input-row {
   display: flex;
   gap: 10px;
+}
+input:not(:placeholder-shown):valid {
+  outline-color: green;
+}
+input:not(:placeholder-shown):invalid {
+  outline-color: red;
 }
 
 button {
@@ -128,7 +130,6 @@ button:hover {
     font-size: 1.2rem;
   }
   .card-xxx {
-    text-align: center;
     font-size: 1.5rem;
   }
 }
